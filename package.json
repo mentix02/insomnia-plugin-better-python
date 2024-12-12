@@ -1,6 +1,6 @@
 {
   "name": "insomnia-plugin-better-python",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "main": "main.js",
   "license": "MIT",
@@ -21,6 +21,9 @@
     "name": "better-python",
     "displayName": "Better Python",
     "description": "Run python scripts from inside Insomnia",
+    "images": {
+      "icon": "npm/content/python.svg"
+    },
     "publisher": {
       "name": "Manan",
       "email": "manan.yadav02@gmail.com"

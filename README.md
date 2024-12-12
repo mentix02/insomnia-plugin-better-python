@@ -38,13 +38,13 @@ To run this script from Insomnia:
 - Hit `Ctrl+Space` to open the plugin dropdown
 - Select `Better Python` and click on the new button that was inserted
 
-![usage-1](./npm/content/usage-1.png)
+![usage-1](https://raw.githubusercontent.com/mentix02/insomnia-plugin-better-python/refs/heads/master/npm/content/usage-1.png)
 
 - Choose your Python interpreter and the file you want to run
 - Provide any arguments you want to pass to the script
 - Hit `Done` and then `Run`
 
-![usage-2](./npm/content/usage-2.png)
+![usage-2](https://raw.githubusercontent.com/mentix02/insomnia-plugin-better-python/refs/heads/master/npm/content/usage-2.png)
 
 ## Credits
 
