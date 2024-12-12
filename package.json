@@ -1,0 +1,30 @@
+{
+  "name": "insomnia-plugin-better-python",
+  "version": "0.1.1",
+  "private": false,
+  "main": "main.js",
+  "license": "MIT",
+  "author": {
+    "name": "Manan",
+    "email": "manan.yadav02@gmail.com"
+  },
+  "keywords": [
+    "insomnia",
+    "plugin",
+    "python"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mentix02/insomnia-plugin-better-python.git"
+  },
+  "insomnia": {
+    "name": "better-python",
+    "displayName": "Better Python",
+    "description": "Run python scripts from inside Insomnia",
+    "publisher": {
+      "name": "Manan",
+      "email": "manan.yadav02@gmail.com"
+    },
+    "unlisted": false
+  }
+}
