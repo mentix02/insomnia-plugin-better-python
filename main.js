@@ -37,25 +37,41 @@ module.exports.templateTags = [
     description: "Run a python3 script to generate some data",
     args: [
       {
-        displayName: "Python Interpreter",
-        placeholder: "~/.pyenv/versions/3.13.0/bin/python3",
         type: "enum",
         options: pythonInterpreterOptions,
+        displayName: "Python Interpreter",
+        placeholder: "~/.pyenv/versions/3.13.0/bin/python3",
+        description: "Python interpreters found by better-python",
       },
       {
+        type: "string",
+        displayName: "Custom Python Interpreter Path",
+        placeholder: "Will be used if provided instead of the selected interpreter above",
+        description: "Will be used if provided instead of the selected interpreter above",
+      },
+      {
+        type: "string",
         displayName: "File path",
         placeholder: "~/file.py",
-        type: "string",
       },
       {
+        type: "string",
         displayName: "args",
         placeholder: "-B -d input.txt",
+      },
+      {
         type: "string",
+        displayName: "PYTHONPATH",
+        placeholder: "~/Desktop/project",
       },
     ],
-    async run(context, interpreter, path, args) {
+    async run(context, interpreter, custom_interpreter, path, args, python_path) {
+      
+      let pythonpath = python_path ? `PYTHONPATH=${python_path} ` : '';
+      let pyinterpreter = custom_interpreter ? custom_interpreter : interpreter;
+
       try {
-        return execSync(`${interpreter} ${path} ${args}`, {
+        return execSync(pythonpath + `${pyinterpreter} ${path} ${args}`, {
           encoding: "utf-8",
         }).trim();
       } catch (failed) {

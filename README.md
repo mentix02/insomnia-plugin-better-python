@@ -40,8 +40,8 @@ To run this script from Insomnia:
 
 ![usage-1](https://raw.githubusercontent.com/mentix02/insomnia-plugin-better-python/refs/heads/master/npm/content/usage-1.png)
 
-- Choose your Python interpreter and the file you want to run
-- Provide any arguments you want to pass to the script
+- Choose your Python interpreter and the file you want to run (or provide your own)
+- Provide any arguments you want to pass to the script (and an optional PYTHONPATH)
 - Hit `Done` and then `Run`
 
 ![usage-2](https://raw.githubusercontent.com/mentix02/insomnia-plugin-better-python/refs/heads/master/npm/content/usage-2.png)
